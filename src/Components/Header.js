@@ -1,4 +1,5 @@
 import  React, {Component} from 'react';
+// import { Link } from 'react-router-dom';
 
 class Header extends Component {
 
@@ -10,9 +11,10 @@ class Header extends Component {
                         <div className='row'>
                             <div className='col-10'>
                                 <ul className='nav d-flex'>
-                                    <li className='nav-items  align-content-center'><a className='nav-link desactive' href='#'>Acceuil</a></li>
-                                    <li className='nav-items  align-content-center'><a className='nav-link' href='#'>User</a></li>
-                                    <li className='nav-items  align-content-center'><a className='nav-link' href='#'>Contact</a></li>
+                                    <li className='nav-items  align-content-center'><a href='#'>Acceuil</a></li>
+                                    <li className='nav-items  align-content-center'><a href='#'>Blog</a></li>
+                                    <li className='nav-items  align-content-center'><a href='#'>User</a></li>
+                                    <li className='nav-items  align-content-center'><a href='#'>Contact</a></li>
                                 </ul>
                                 
 

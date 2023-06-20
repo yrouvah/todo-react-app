@@ -1,6 +1,8 @@
 import React , {useState} from 'react'
 
+console.log("add dev")
 const AddDev =({addNewDatalist})=>{
+
 
     const [addDevName, setAddDevName]=  useState('');
     const [addDevPost, setAddDevPost]=  useState('');

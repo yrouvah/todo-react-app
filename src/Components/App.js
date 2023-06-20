@@ -3,11 +3,13 @@ import NavBar from "./NavBar";
 import ToDoList from "./ToDoList";
 import AddTask from "./AddTask";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import initialData from "../initialData";
+import initialData from "../Data/initialData";
 import uniqueid from "uniqueid";
 import Fetching from "./Fetching";
 import Header from "./Header";
 import Api from "./Api";
+
+console.log("composant app")
 
 class App extends Component {
   state = {
@@ -80,6 +82,7 @@ class App extends Component {
               )}
             />
             <Route path="/user" component={Api} />
+
           </Switch>{" "}
           <NavBar onDeleteCompleted={this.onDeleteCompleted} />
         </BrowserRouter>
