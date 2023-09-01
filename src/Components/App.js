@@ -8,8 +8,8 @@ import uniqueid from "uniqueid";
 import Fetching from "./Fetching";
 import Header from "./Header";
 import Api from "./Api";
+import Blog from "./Pages/Blog";
 
-console.log("composant app")
 
 class App extends Component {
   state = {
@@ -82,10 +82,12 @@ class App extends Component {
               )}
             />
             <Route path="/user" component={Api} />
+            <Route path="/blog" component={Blog} />
 
           </Switch>{" "}
           <NavBar onDeleteCompleted={this.onDeleteCompleted} />
         </BrowserRouter>
+       
       </section>
     );
   }
