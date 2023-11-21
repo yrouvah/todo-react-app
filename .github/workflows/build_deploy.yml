@@ -8,7 +8,7 @@ on:
     workflow_dispatch:
     push:
         branches:
-            - main
+         - main
 jobs:
     test:
         runs-on: Ubuntu-latest
@@ -40,7 +40,7 @@ jobs:
               uses: JamesIves/github-pages-deploy-action@v4
               with:
                 folder: build
-                branch: deployement-todo
+                branch: todo-react-app
               env:
                 ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           
