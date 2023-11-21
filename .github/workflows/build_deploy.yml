@@ -2,10 +2,15 @@ name: Todo app
 permissions:
   contents: write
 on: 
+    pull_request:
+       types:
+        - opened
     workflow_dispatch:
     push:
         branches:
             - main
+        path-ignore:
+            - '.github/workflows/*'
 jobs:
     test:
         runs-on: Ubuntu-latest
